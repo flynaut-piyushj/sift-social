@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">SocialSift</string>
+    <string name="check_net_connection">Please check internet connection</string>
+    <string name="facebook_app_id">445145832506275</string>
+    <string name="fb_login_protocol_scheme">fb445145832506275</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="hello">Hello, </string>
+    <string name="login_instructions">Login to twiter</string>
+    <string name="share_instructions">Enter share message</string>
+    <string name="btn_login">Login to Twitter</string>
+    <string name="btn_share">Share</string>
+
+    <!-- Twitter Configurations -->
+    <string name="twitter_callback">oauth://com.hintdesk.Twitter_oAuth</string>
+    <string name="twitter_consumer_key">rmTjZBIXnkBn0KLKz211wjg55</string>
+    <string name="twitter_consumer_secret">LtDTZdHsUBTgu41ZBl7eiWAVrb2n70UhbS9X1qJi9dq9kPEPkr</string>
+    <string name="twitter_oauth_verifier">oauth_verifier</string>
+    <!-- End Configurations -->
+</resources>

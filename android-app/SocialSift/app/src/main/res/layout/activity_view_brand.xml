@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_notification" />
+
+    <LinearLayout
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/toolbar"
+        android:background="#a9b0c3"
+        android:orientation="vertical" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:id="@+id/brand_cover"
+        android:src="@drawable/bramd_cover"
+        android:layout_below="@+id/view"
+        android:layout_toRightOf="@+id/progress_bar"
+        android:layout_toEndOf="@+id/progress_bar" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:id="@+id/img_editCover"
+        android:layout_marginTop="120dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_edit"/>
+
+
+
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="fitXY"
+        android:id="@+id/brand_logo"
+        android:layout_marginTop="-35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/brand_cover"
+        android:src="@drawable/default_image"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="165dp"
+       android:layout_marginLeft="60dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/img_editProfile"
+        android:src="@drawable/ic_edit"/>
+
+<com.example.dell.socialsift.utils.MyEditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="E. A. SPORT"
+    android:background="@null"
+    android:layout_marginTop="5dp"
+    android:layout_toRightOf="@+id/brand_logo"
+    android:id="@+id/brand_name"
+    android:textColor="@color/black_light"
+    android:layout_below="@+id/brand_cover"
+    android:layout_marginLeft="15dp"
+    android:gravity="center"
+    android:textSize="25dp"
+    android:textStyle="bold"/>
+
+
+    <com.example.dell.socialsift.utils.MyEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cvcvx"
+        android:background="@null"
+        android:textColor="@color/black_light"
+        android:layout_toRightOf="@+id/brand_logo"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/brand_name"
+        android:id="@+id/brand_description"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/brand_description"
+        android:id="@+id/img_editData"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_edit"/>
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="30dp"
+    android:layout_below="@+id/brand_cover"
+    android:text="post"
+    android:id="@+id/btnBrandAction"
+    android:layout_marginTop="15dp"
+    android:layout_marginRight="10dp"
+    android:layout_alignParentEnd="true"
+
+    android:textColor="@color/white"
+    android:background="@drawable/button_red_background"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+
+        android:layout_below="@+id/img_editData"
+        android:scrollbars="vertical" />
+
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginLeft="50dp"
+        android:text="Activate"
+        android:gravity="center"
+        android:foregroundGravity="center"
+        android:id="@+id/activateDeactivateButton"
+        android:background="@drawable/button_red_background"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="250dp"
+
+
+        android:text="Edit"
+        android:gravity="center"
+        android:foregroundGravity="center"
+        android:id="@+id/editButton"
+        android:background="@drawable/button_red_background"
+        android:textColor="@color/white"/>
+</RelativeLayout>

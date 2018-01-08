@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/nav_subcribers"
+
+            app:actionViewClass="android.widget.TextView"
+           android:title="SUBSCRIBERS" />
+
+        <item
+            android:id="@+id/nav_explore"
+
+            android:title="EXPLORE" />
+
+        <item
+            android:id="@+id/nav_about"
+
+          android:title="SETTING" />
+
+        <item
+            android:id="@+id/nav_brands"
+
+            android:title="BRAND"
+            />
+        <item
+            android:id="@+id/nav_pre_profile"
+
+            android:title="PreProfile"
+            />
+
+
+
+    </group>
+
+
+
+</menu>

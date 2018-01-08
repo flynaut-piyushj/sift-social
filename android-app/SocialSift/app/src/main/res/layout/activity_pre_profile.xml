@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_profile">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/img_bck_yellow"
+            android:orientation="vertical">
+
+            <com.example.dell.socialsift.utils.MyTextView
+                android:id="@+id/txt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="200dp"
+                android:text="charlotter NC"
+                android:textColor="@color/black"
+                android:textSize="22dp" />
+
+            <com.example.dell.socialsift.utils.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_name"
+                android:layout_marginLeft="15dp"
+                android:text="Protographer"
+                android:textColor="@color/black"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <com.example.dell.socialsift.utils.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/txt_random"
+
+                android:layout_marginRight="20dp"
+                android:gravity="end"
+                android:text="John Doe"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <com.example.dell.socialsift.utils.MyTextView
+                android:id="@+id/txt_random"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/txt_profession"
+                android:layout_marginRight="20dp"
+                android:gravity="end"
+                android:text="The"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <com.example.dell.socialsift.utils.MyTextView
+                android:id="@+id/txt_profession"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/txt_guy"
+                android:layout_marginRight="20dp"
+                android:gravity="end"
+                android:text="Creative"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <com.example.dell.socialsift.utils.MyTextView
+                android:id="@+id/txt_guy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/txt_sf"
+                android:layout_marginRight="20dp"
+                android:gravity="end"
+                android:text="Guy"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <com.example.dell.socialsift.utils.MyTextView
+                android:id="@+id/txt_sf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btn_sub"
+                android:layout_marginRight="20dp"
+                android:gravity="end"
+                android:text="SF211"
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/btn_sub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/buttonsignin"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_red_background"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="subscribe"
+                android:textAllCaps="true"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/buttonsignin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_red_background"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="View Profile"
+                android:textAllCaps="true"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

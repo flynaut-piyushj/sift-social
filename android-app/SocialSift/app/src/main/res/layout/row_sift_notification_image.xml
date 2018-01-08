@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/reltive_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:layout_marginTop="-100dp"
+            android:src="@drawable/default_image"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="1dp" />
+
+        <com.example.dell.socialsift.utils.MyTextView
+
+            android:id="@+id/bloger_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/imgProfile"
+            android:text="John Doe"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/color_red"
+            android:textSize="18dp" />
+
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:padding="10dp"
+            android:src="@drawable/profile"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/bloger_name"
+android:scaleType="fitXY"
+            android:layout_toRightOf="@+id/imgProfile"
+            android:gravity="center"
+        android:src="@drawable/img1" />
+
+
+
+
+        <ImageView
+            android:id="@+id/img_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_toRightOf="@+id/imgProfile"
+            android:src="@drawable/ic_timer" />
+
+        <com.example.dell.socialsift.utils.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@+id/img_time"
+            android:gravity="center"
+android:layout_marginTop="3dp"
+            android:text="18 min ago "
+            android:textColor="@color/black_light"
+            android:textSize="18dp" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

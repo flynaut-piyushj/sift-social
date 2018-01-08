@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parentLayout"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/img_bck_gray"
+        android:layout_height="match_parent">
+
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/app_logo">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.example.dell.socialsift.utils.MyTextView
+                    android:id="@+id/txt_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:text="Fill Brand Details"
+                    android:textColor="@color/black_light"
+                    android:textSize="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="14dp"
+                    android:background="#a9b0c3" />
+
+                <com.example.dell.socialsift.utils.MyEditText
+                    android:id="@+id/editTextBrandName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#00000000"
+                    android:layout_below="@+id/view2"
+
+                    android:hint="BRAND NAME"
+                    android:inputType="textCapWords"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/black_light"
+                    android:textColorHint="@color/black_light"
+                    android:textCursorDrawable="@null"
+                    android:textSize="13dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_below="@+id/editTextEmail"
+                    android:layout_marginTop="10dp"
+                    android:background="#a9b0c3" />
+
+                <com.example.dell.socialsift.utils.MyEditText
+                    android:id="@+id/editTextBrandDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#00000000"
+                    android:layout_below="@+id/view2"
+
+                    android:hint="BRAND DESCRIPTION"
+                    android:inputType="textCapWords"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/black_light"
+                    android:textColorHint="@color/black_light"
+                    android:textCursorDrawable="@null"
+                    android:textSize="13dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_below="@+id/editTextEmail"
+                    android:id="@+id/view3"
+                    android:layout_marginTop="10dp"
+                    android:background="#a9b0c3" />
+
+
+
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border_gray"
+                    android:padding="-10dp">
+
+                    <Spinner
+
+                        android:id="@+id/spinner_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:spinnerMode="dialog" />
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/profile_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:background="#fff"
+                            android:layerType="software"
+
+                            android:visibility="gone"
+                            app:civ_border_color="#8c8c8c"
+                            app:civ_border_width="2dp" />
+
+                        <Button
+                            android:id="@+id/btn_selectphoto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/custome_border"
+                            android:padding="5dp"
+                            android:text=" Add Profile Photo"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="14dp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/cover_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:background="#fff"
+
+                            android:layerType="software"
+                            android:visibility="gone"
+                            app:civ_border_color="#8c8c8c"
+                            app:civ_border_width="2dp" />
+
+                        <Button
+                            android:id="@+id/btn_select_cover_photo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/custome_border"
+                            android:padding="5dp"
+                            android:text="Add Cover Photo"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="14dp"
+                            android:textStyle="normal" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/button_create_brand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_below="@+id/view7"
+                    android:gravity="center"
+
+                    android:padding="16dp"
+                    android:background="@drawable/button_red_background"
+                    android:text="Create"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_red"
+        android:id="@+id/layout_next"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:src="@drawable/ic_arrow"
+            android:padding="5dp"
+            android:foregroundGravity="center"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+</RelativeLayout>

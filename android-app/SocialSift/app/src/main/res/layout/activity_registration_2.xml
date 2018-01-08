@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parentLayout"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/img_bck_gray"
+        android:layout_height="match_parent">
+
+
+        <com.example.dell.socialsift.utils.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_light"
+            android:textSize="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+            android:text=" Sign up "/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:id="@+id/app_logo"
+        android:scaleType="centerInside"
+        android:src="@drawable/app_logo" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/app_logo">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+
+                android:background="@drawable/border_gray"
+                android:padding="-10dp">
+
+                <Spinner
+
+                    android:id="@+id/spinner_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:spinnerMode="dialog" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="40dp"
+                android:id="@+id/layout_state"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border_gray"
+                android:padding="-10dp">
+
+                <Spinner
+
+                    android:id="@+id/spinner_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:spinnerMode="dialog" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="40dp"
+                android:id="@+id/layout_city"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border_gray"
+                android:padding="-10dp">
+
+                <Spinner
+
+                    android:id="@+id/spinner_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:spinnerMode="dialog" />
+
+            </RelativeLayout>
+
+
+          <!--  <com.example.dell.socialsift.utils.MyEditText
+                android:id="@+id/editTextCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:background="#00000000"
+
+                android:layout_below="@+id/app_logo"
+                android:hint="CITY"
+                android:inputType="textEmailAddress"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black_light"
+                android:textColorHint="@color/black_light"
+                android:textCursorDrawable="@null"
+                android:textSize="13dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+
+                android:layout_marginLeft="30dp"
+                android:id="@+id/view1"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="#a9b0c3" />
+
+
+            <com.example.dell.socialsift.utils.MyEditText
+                android:id="@+id/editTextState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:background="#00000000"
+                android:layout_below="@+id/view1"
+
+                android:hint="STATE"
+                android:inputType="textEmailAddress"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black_light"
+                android:textColorHint="@color/black_light"
+                android:textCursorDrawable="@null"
+                android:textSize="13dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+
+                android:id="@+id/view2"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="#a9b0c3" />-->
+
+            <com.example.dell.socialsift.utils.MyEditText
+                android:id="@+id/editTextOccupation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:background="#00000000"
+                android:layout_below="@+id/view2"
+
+                android:hint="OCCUPATION"
+                android:inputType="textCapWords"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black_light"
+                android:textColorHint="@color/black_light"
+                android:textCursorDrawable="@null"
+                android:textSize="13dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/editTextEmail"
+                android:id="@+id/view3"
+                android:layout_marginTop="10dp"
+                android:background="#a9b0c3" />
+
+
+
+            <com.example.dell.socialsift.utils.MyEditText
+                android:id="@+id/editTextBirthDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:background="#00000000"
+android:visibility="gone"
+                android:layout_below="@+id/view3"
+                android:hint="PRIVATE"
+                android:inputType="textEmailAddress"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black_light"
+                android:textColorHint="@color/black_light"
+                android:textCursorDrawable="@null"
+                android:textSize="13dp" />
+
+
+
+
+
+            <Button
+                android:id="@+id/buttonsignin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_below="@+id/view7"
+                android:gravity="center"
+
+                android:padding="16dp"
+                android:background="@drawable/button_red_background"
+                android:text="finish"
+                android:textAllCaps="true"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_red"
+        android:id="@+id/layout_next"
+android:visibility="gone"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:src="@drawable/ic_arrow"
+            android:padding="5dp"
+            android:foregroundGravity="center"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+         />
+</RelativeLayout>

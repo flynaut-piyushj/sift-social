@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Light">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar_notification"></include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            android:background="@color/color_red">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/img_search"
+                android:layout_toLeftOf="@+id/edt_search"
+                android:foregroundGravity="center"
+                android:src="@drawable/ic_search"/>
+            <com.example.dell.socialsift.utils.MyEditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edt_search"
+                android:text="Type Search"
+                android:layout_marginLeft="5dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/color_off_white"
+                android:background="@null"
+                />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/toolbar"
+
+            android:background="@color/white" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fafafa"
+            app:tabBackground="@color/white"
+            app:tabIndicatorColor="@color/color_red"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/color_red"
+            app:tabTextAppearance="@style/tabText"
+            app:tabTextColor="@color/black_light" />
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+
+</LinearLayout>

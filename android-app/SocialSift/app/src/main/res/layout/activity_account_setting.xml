@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_bck_red">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/toolbar"
+        android:background="#a9b0c3"
+        android:orientation="vertical" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/view"
+    android:orientation="vertical">
+
+    <com.example.dell.socialsift.utils.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:layout_margin="15dp"
+        android:id="@+id/text"
+
+android:textSize="18dp"
+        android:text="Privacy "
+        android:textColor="@color/black_light"/>
+
+    <com.example.dell.socialsift.utils.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_margin="15dp"
+        android:textSize="18dp"
+        android:id="@+id/txt_notification"
+        android:text="Notification "
+        android:textColor="@color/black_light"/>
+
+  <!--  <com.example.dell.socialsift.utils.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:id="@+id/txt_edit_profile"
+        android:layout_margin="15dp"
+        android:textSize="18dp"
+        android:text="Edit Profile "
+        android:textColor="@color/black_light"/>-->
+
+    <com.example.dell.socialsift.utils.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:id="@+id/txt_blocking"
+        android:layout_margin="15dp"
+        android:textSize="18dp"
+        android:text="Blocking "
+        android:textColor="@color/black_light"/>
+
+
+    <com.example.dell.socialsift.utils.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:id="@+id/txt_login"
+        android:layout_margin="15dp"
+        android:textSize="18dp"
+        android:text="Edit Profile"
+        android:textColor="@color/black_light"/>
+
+</LinearLayout>
+
+    <com.example.dell.socialsift.utils.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/txt_logout"
+        android:layout_margin="15dp"
+        android:textSize="22dp"
+        android:text="Logout "
+        android:textColor="@color/white"/>
+</RelativeLayout>
